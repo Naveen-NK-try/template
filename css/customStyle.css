@@ -1,4 +1,8 @@
-﻿.product__items--content .h4 a
+.mainlogo__img {
+  width: 250px;
+  height: auto; /* keeps the aspect ratio */
+}
+.product__items--content .h4 a
 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -88,4 +92,5 @@
 .shop__section .store-main .store-img img
 {
     width:100%;
+
 }
