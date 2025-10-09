@@ -94,3 +94,73 @@
     width:100%;
 
 }
+/* === Arabic Theme Additions === */
+
+/* Import Arabic-style Google fonts (Cairo, Tajawal) */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@700&display=swap');
+
+/* Override main headings and hero/banner fonts */
+h1, h2, h3, h4, h5, h6, .mainheader--title {
+  font-family: 'Cairo', 'Tajawal', 'Josefin Sans', Arial, sans-serif !important;
+  letter-spacing: 1px;
+}
+
+/* Section backgrounds with arabesque SVG */
+section.hero, .mainheader, footer {
+  background-image: url('https://www.svgbackgrounds.com/svg/arabesque-gold.svg'); /* Replace with your own SVG if needed */
+  background-repeat: repeat;
+  background-size: 400px 400px;
+}
+
+/* Accent color for theme buttons, CTAs, borders */
+.primarybtn, .theme-button {
+  background: linear-gradient(90deg, #e7b96f 0%, #fdc26c 100%);
+  color: #222;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 8px rgba(232,185,111,0.14);
+}
+
+.testimonial-item, .shop__section .store-main, .shop__section .store-details {
+  border-radius: 18px;
+  box-shadow: 0 0 25px 0 rgba(232,185,111,0.10);
+  border: 2px solid #e7b96f;
+}
+
+body {
+  background: linear-gradient(135deg, #232526 0%, #1c2036 60%, #e7b96f 100%);
+}
+
+/* Optional gold border for highlighted sections */
+.highlight-arabic {
+  border: 2px solid #e7b96f;
+  border-radius: 14px;
+  box-shadow: 0 0 8px #e7b96f15;
+  padding: 5px 15px;
+}
+
+/* Small Arabic flag/language selector styles (add <div class="arabic-lang-btn"> in header) */
+.arabic-lang-btn {
+  background: #e7b96f;
+  color: #232526;
+  border-radius: 12px;
+  padding: 5px 14px;
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Optional RTL styling for Arabic language switch (if you add actual Arabic content!) */
+body.arabic-rtl {
+  direction: rtl;
+}
+body.arabic-rtl h1, body.arabic-rtl h2, body.arabic-rtl h3, body.arabic-rtl h4, body.arabic-rtl h5, body.arabic-rtl h6 {
+  text-align: right;
+}
+
+/* Keep your original classes for product/category, testimonial, etc below */
+
+
